@@ -96,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#000000",
+	"#d54e53",
+	"#b9ca4a",
+	"#e6c547",
+	"#0087d7",
+	"#c397d8",
+	"#70c0ba",
+	"#eaeaea",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#666666",
+	"#ff3334",
+	"#9ec400",
+	"#e7c547",
+	"#5fafff",
+	"#b77ee0",
+	"#b77ee0",
+	"#ffffff",
 
 	[255] = 0,
 
@@ -131,9 +131,9 @@ unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
-unsigned int const currentBg = 6, buffSize = 2048;
+unsigned int const currentBg = 0, buffSize = 2048;
 /// [Vim Browse] Colors for search results currently on screen.
-unsigned int const highlightBg = 160, highlightFg = 15;
+unsigned int const highlightBg = 4, highlightFg = 7;
 char const wDelS[] = "!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~", wDelL[] = " \t";
 char *nmKeys [] = {              ///< Shortcusts executed in normal mode
   "R/Building\nN", "r/Building\n", "X/juli@machine\nN", "x/juli@machine\n",
